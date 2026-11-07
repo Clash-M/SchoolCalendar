@@ -11,4 +11,4 @@ What surprised me was how quickly it generated code and how much code it produce
 I learned that AI has access to a lot of online tools. At one point during my implementation, I asked it to use AI in the conversion process. It had a clear approach, but I scrapped it because it was too confusing for me to understand.
 
 ## What I would do differently
-I would be more precise and use simpler prompts at the start. I think I tried to cover too many things with my first couple of prompts.
+I would be more precise and use simpler prompts at the start. I think I tried to cover too many things with my first couple of prompts. Not Use AI for README.
