@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SchoolCalendar
 
 ## Run the calendar converter
@@ -10,3 +11,6 @@ The converter is a static website: it parses the imported HTML locally in your b
 - Weekly schedule cells without a time are exported as all-day events because the source does not specify a time. Review the CSV before importing it into Google Calendar; date and event recognition is local and rule-based.
 
 The app accepts HTML files up to 1 MB. Detected events are downloaded as a Google Calendar-compatible CSV.
+=======
+# SchoolCalendar
+>>>>>>> origin/main
