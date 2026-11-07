@@ -1,0 +1,147 @@
+:root {
+  color-scheme: light;
+  --csp-navy: #003055;
+  --csp-gold: #e6b220;
+  --page-background: #f3f3f3;
+  --muted-text: #4a6889;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: var(--page-background);
+  color: var(--csp-navy);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+main {
+  width: min(100%, 560px);
+  padding: 40px;
+  border: 1px solid #e1e8ec;
+  border-top: 6px solid var(--csp-gold);
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 12px 32px rgb(0 48 85 / 12%);
+}
+
+h1 {
+  margin: 0 0 12px;
+  font-size: clamp(1.75rem, 5vw, 2.25rem);
+  line-height: 1.15;
+}
+
+p {
+  margin: 0 0 28px;
+  color: var(--muted-text);
+  line-height: 1.6;
+}
+
+.privacy-note {
+  margin-top: -16px;
+  font-size: 0.9rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 650;
+}
+
+input[type="file"] {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  border: 1px dashed var(--muted-text);
+  border-radius: 10px;
+  background: #f8faff;
+  color: var(--csp-navy);
+}
+
+input[type="file"]::file-selector-button {
+  margin-right: 12px;
+  padding: 8px 12px;
+  border: 0;
+  border-radius: 6px;
+  background: var(--csp-navy);
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background: #1a496d;
+}
+
+input[type="file"]:focus-visible {
+  outline: 3px solid var(--csp-gold);
+  outline-offset: 3px;
+}
+
+#convert-button {
+  margin-top: 20px;
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 8px;
+  background: var(--csp-navy);
+  color: #fff;
+  font: inherit;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+#convert-button:hover:not(:disabled) {
+  background: #1a496d;
+}
+
+#convert-button:focus-visible {
+  outline: 3px solid var(--csp-gold);
+  outline-offset: 3px;
+}
+
+#convert-button:disabled {
+  background: #7a8faa;
+  cursor: not-allowed;
+}
+
+#download-link {
+  display: inline-block;
+  margin: 20px 0 0 10px;
+  padding: 12px 18px;
+  border: 2px solid var(--csp-navy);
+  border-radius: 8px;
+  color: var(--csp-navy);
+  font-weight: 650;
+  text-decoration: none;
+}
+
+#download-link:hover {
+  background: #f3f3f3;
+}
+
+#download-link:focus-visible {
+  outline: 3px solid var(--csp-gold);
+  outline-offset: 3px;
+}
+
+#download-link[hidden] {
+  display: none;
+}
+
+#file-status {
+  min-height: 1.5em;
+  margin: 12px 0 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 28px 24px;
+  }
+}

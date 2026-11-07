@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course calendar to Google Calendar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1>Course calendar to Google Calendar</h1>
+    <p>Find dated events in your course calendar HTML and create a Google Calendar CSV file.</p>
+    <p class="privacy-note">Your file is processed locally and is not uploaded. Schedules without a year use the current year; items without a time become all-day events.</p>
+
+    <label for="html-file">Import an HTML file</label>
+    <input id="html-file" name="html-file" type="file" accept=".html,.htm,text/html">
+    <p id="file-status" aria-live="polite">No file selected.</p>
+    <button id="convert-button" type="button" disabled>Find events &amp; create CSV</button>
+    <a id="download-link" hidden>Download CSV</a>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
